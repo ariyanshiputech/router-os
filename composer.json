@@ -2,7 +2,6 @@
     "name": "ariyanshipu/router-os",
     "description": "Mikrotik API PHP Library for working with RouterOS API",
     "type": "library",
-    "time": "2025-04-05",
     "keywords": [
         "API",
         "Mikrotik",
@@ -17,12 +16,14 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "MikrotikAPI": "src/",
-            "MikrotikAPITest": "test/"
+        "psr-4": {
+            "MikrotikAPI\\": "src/",
+            "MikrotikAPITest\\": "test/"
         }
     },
     "require": {
         "php": ">=8.1"
-    }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
